@@ -1,8 +1,15 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  app: {
+  container: {
     padding: 30,
+  },
+  painel: {
+    alignSelf: 'center',
+    width: 150,
+    borderRadius: 5,
+    padding: 8,
+    marginVertical: 10,
   },
   legenda: {
     textAlign: 'center',
@@ -18,12 +25,25 @@ export default StyleSheet.create({
     fontSize: 16,
   },
   peso: {
-    borderColor: '#000',
+    borderColor:'#dcdce6',
     borderWidth: 1,
+    borderRadius: 8,
+    padding: 4,
+    paddingHorizontal: 4,
+    fontSize: 16,
+    height: 50,
+    marginTop: 20,
+    marginBottom: 20,
   },
   altura: {
-    borderColor: '#000',
+    borderColor:'#dcdce6',
     borderWidth: 1,
+    borderRadius: 8,
+    padding: 4,
+    paddingHorizontal: 4,
+    fontSize: 16,
+    height: 50,
+    marginBottom: 20,
   },
   button: {
     marginTop: 20,
