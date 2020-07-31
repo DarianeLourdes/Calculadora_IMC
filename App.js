@@ -15,7 +15,7 @@ export default class App extends React.Component {
     const resultado = this.state.peso / (this.state.altura * this.state.altura);
 
     this.setState({
-      imc: resultado
+      imc: Math.ceil(resultado)
     });
 
     if(resultado < 18.5) {
@@ -53,8 +53,18 @@ export default class App extends React.Component {
         </View>
 
         <View>
-          <TextInput style={styles.peso} />
-          <TextInput style={styles.altura} />
+          <TextInput 
+            style={styles.peso} 
+            onChangeText={value => {
+              this.setState({peso: value.replace(',', '.')});
+            }}
+          />
+          <TextInput 
+            style={styles.altura} 
+            onChangeText={value => {
+              this.setState({altura: value.replace(',', '.')});
+            }}
+          />
 
           <TouchableOpacity onPress={this.calcularIMC} style={styles.button}>
             <Text style={styles.buttonText}>Calcular</Text>
