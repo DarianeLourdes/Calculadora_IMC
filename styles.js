@@ -2,60 +2,60 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    padding: 30,
-  },
-  painel: {
-    alignSelf: 'center',
-    width: 150,
-    borderRadius: 5,
-    padding: 8,
-    marginVertical: 10,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   legenda: {
     textAlign: 'center',
+    color: '#57606f',
     fontWeight: 'bold',
+    fontSize: 20,
+  },
+  painel: {
+    alignSelf: 'center',
+    width: 200,
+    borderRadius: 50,
+    padding: 8,
+    marginVertical: 15,
   },
   resultado: {
     textAlign: 'center',
-    fontSize: 22,
+    fontSize: 27,
     fontWeight: 'bold',
+    color: '#57606f',
   },
   diagnostico: {
     textAlign: 'center',
-    fontSize: 16,
+    fontSize: 20,
+    color: '#57606f',
   },
-  peso: {
-    borderColor:'#dcdce6',
-    borderWidth: 1,
-    borderRadius: 8,
-    padding: 4,
-    paddingHorizontal: 4,
-    fontSize: 16,
-    height: 50,
+  form: {
+    alignSelf: 'stretch',
+    paddingHorizontal: 30,
     marginTop: 20,
-    marginBottom: 20,
   },
-  altura: {
-    borderColor:'#dcdce6',
-    borderWidth: 1,
+  input: {
+    backgroundColor: '#dfe4ea',
+    borderColor:'#333',
+    borderBottomWidth: 1,
     borderRadius: 8,
-    padding: 4,
-    paddingHorizontal: 4,
+    paddingHorizontal: 5,
     fontSize: 16,
     height: 50,
     marginBottom: 20,
   },
   button: {
     marginTop: 20,
-    height: 50,
-    backgroundColor: '#00cec9',
+    height: 60,
+    backgroundColor: '#fdcb6e',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 8,
+    borderRadius: 50,
   },
   buttonText: {
     color: '#fff',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 20,
   }
 });
